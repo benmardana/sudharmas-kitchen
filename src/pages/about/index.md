@@ -1,13 +1,8 @@
 ---
 templateKey: about-page
 path: /about
-title: About us and this blog
+title: About us
 ---
-![Sri lanka](/img/img_2433-1-.jpg)
-
-My mum, Sue, is the the best cook in the world. Of course, as her daughter, I may be biased. But the countless number of times I've heard folk from all over the globe (Australia, New Zealand, South Africa, the UK, Denmark, China, Thailand, the Netherlands... AND Sri Lanka) sit at our dining table, clean their plates, lick their lips and rub their full bellies - proving that, time and time again, Mum's recipes are classics. Sri Lankan food is uniquely personal to the home cook: there is never a \"standard\" recipe. Growing up in Australia, I've watched my\
-mum tailor and tweak her recipes to suit many different palates, and this blog is a summary of my personal favourites.
-
 ### Two Sri Lankan vets living in regional Australia
 
 More than 30 years ago, my parents (as two young Sri Lankan veterinarians), moved to Perth - Australia. They soon found themselves in the middle of regional W.A. (Katanning), renting a property on a farm, with a baby and a naughty Kelpie called Danny. We then moved around a lot to various agricultural town centres in regional Victoria and South Australia. 

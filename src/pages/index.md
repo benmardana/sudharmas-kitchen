@@ -2,12 +2,11 @@
 templateKey: index-page
 title: Sudharma's Kitchen
 image: /img/img_2378-1-1-.jpg
-heading: "Some delicious Sri Lankan cooking "
+heading: "Simply some delicious Sri Lankan cooking "
 subheading: A blog for my mum and her delicious Sri Lankan recipes
 mainpitch:
   title: "  "
   description: "\n "
-description: " "
 intro:
   blurbs:
     - image: /img/img_20191117_172758-1-.jpg
@@ -27,6 +26,7 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+description: " "
 main:
   heading: " "
   description: "\n"

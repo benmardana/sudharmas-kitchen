@@ -13,7 +13,7 @@ featuredimage: /img/img_20200621_155502.jpg
 tags:
   - eggplant fried srilankan pickle main vegetarian
 ---
-![](/img/img_20200621_155502.jpg)
+![Batu Moju - Sri lankan fried eggplant pickle](/img/img_20200621_155502.jpg "Batu Moju")
 
 **Serves:** 2-4
 
@@ -21,11 +21,10 @@ tags:
 
 **Difficulty and time:** Easy to moderate, 45 minutes
 
-
-
 **Ingredients**
 
 *For the fry up*
+
 1. 1 kg eggplant, sliced into rounds across the equator, and then into 1 cm wide strips
 2. 1/2 teaspoon turmeric
 3. 1 onion, sliced along the equator 
@@ -36,6 +35,7 @@ tags:
 8. (Optional) Raw green chilli (sliced) for garnish
 
 *For the pickling sauce*
+
 1. 1/3 cup white vinegar
 2. 2 tablespoons sugar
 3. 1 tablespoon chilli powder
@@ -44,16 +44,20 @@ tags:
 6. 1/2 inch ginger (minced)
 7. Pinch of salt (to taste)
 
-
 **Method:**
 
 1. Prepare raw ingredients for the fry up. 
+
+![Cut eggplant](/img/img_20200621_140228.jpg "Eggplant")
+
 2. In a large bowl, combine salt, turmeric and eggplant strips until coated. Let rest in a colander for at least 10 minutes to drain some of the liquid. 
+
+![Eggplant with turmeric and salt](/img/img_20200621_143135-1-.jpg "Eggplant with turmeric and salt")
+
 3. While eggplant is being drained, slowly heat up a wok of oil until hot enough for deep frying. Use a wooden spoon to test temperature of the oil (there should be bubbles). Do not let oil over heat or smoke - this will burn the eggplant. 
 4. Once oil is at temperature, fry eggplant in batches (2-4 batches), until golden brown and each piece is beginning to crinkle. Remove each batch into a bowl with paper towel to absorb excess oil. 
 5. In the same oil, fry green chillies, and dried anchovy (if using) for 2-5 minutes. Remove from oil and rest in a bowl with paper towel. Then add onion, and fry until brown and crispy, and place in same bowl. 
 6. To prepare the pickling sauce, add all pickling ingredients into a large bowl. Combine until sugar and salt is fully combined and taste. Pickling sauce should balance salt, sweet and sour - so adjust ingredients as required. 
 7. Add all ingredients from the fry up into the bowl of pickling sauce, and gently combine. Rest for 30 mins - 1 hour for the pickle flavours to absorb. 
 
-Serve with rice and curry of your choice. Enjoy! 
-
+Serve with rice and curry of your choice. Enjoy!

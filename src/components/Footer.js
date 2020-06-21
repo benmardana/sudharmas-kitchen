@@ -12,7 +12,7 @@ const Footer = class extends React.Component {
     return (
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
-          <strong>Sudharma's Kitchen</strong>
+          <strong className="has-text-white-ter">Sudharma's Kitchen</strong>
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
@@ -53,7 +53,7 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                     <li>
                       <Link className="navbar-item" to="/recipe">
-                        Latest Stories
+                        Latest Recipes
                       </Link>
                     </li>
                     <li>

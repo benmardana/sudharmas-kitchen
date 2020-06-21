@@ -1,15 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { RecipeTemplate } from "../../templates/blog-post";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { RecipeTemplate } from '../../templates/recipe';
 
 const RecipePreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(["data", "tags"]);
+  const tags = entry.getIn(['data', 'tags']);
   return (
     <RecipeTemplate
-      content={widgetFor("body")}
-      description={entry.getIn(["data", "description"])}
+      content={widgetFor('body')}
+      description={entry.getIn(['data', 'description'])}
       tags={tags && tags.toJS()}
-      title={entry.getIn(["data", "title"])}
+      title={entry.getIn(['data', 'title'])}
     />
   );
 };

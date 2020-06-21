@@ -17,6 +17,7 @@ class BlogRoll extends React.Component {
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
+                style={{ height: '100%' }}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
@@ -36,14 +37,14 @@ class BlogRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
+                    <span>&nbsp;</span>
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
                 <p>
-                  {post.excerpt}
+                  {post.frontmatter.description}
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
@@ -76,7 +77,6 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
               id
               fields {
                 slug
@@ -85,7 +85,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
+                description
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {

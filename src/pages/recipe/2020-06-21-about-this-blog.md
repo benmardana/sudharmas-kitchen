@@ -9,12 +9,10 @@ description: >
   Thailand, the Netherlands... AND Sri Lanka) sit at our dining table, clean
   their plates, lick their lips and rub their full bellies - proving that, time
   and time again, Mum's recipes are classics.  Sri Lankan food is uniquely
-  personal to the home cook: there is never a "standard" recipe. Growing up in
-  Australia, I've watched my mum tailor and tweak her recipes to suit many
-  different palates, and this blog is a summary of my personal favourites. 
+  personal to the home cook: there is never a "standard" recipe. 
 featuredpost: true
 featuredimage: /img/img_20191117_172758-1-.jpg
 tags:
   - Sri Lanka
 ---
-\
+Growing up in Australia, I've watched my mum tailor and tweak her recipes to suit many different palates, and this blog is a summary of my personal favourites.

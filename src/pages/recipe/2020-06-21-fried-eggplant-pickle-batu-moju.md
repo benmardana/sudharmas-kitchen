@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: recipe
 title: Fried eggplant pickle ("Batu Moju")
 date: 2020-06-21T06:50:06.359Z
 description: "This \"Batu moju\" (translated as \"eggplant pickle\") brings back

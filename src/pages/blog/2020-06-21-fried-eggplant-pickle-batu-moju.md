@@ -53,7 +53,7 @@ tags:
 4. Once oil is at temperature, fry eggplant in batches (2-4 batches), until golden brown and each piece is beginning to crinkle. Remove each batch into a bowl with paper towel to absorb excess oil. 
 5. In the same oil, fry green chillies, and dried anchovy (if using) for 2-5 minutes. Remove from oil and rest in a bowl with paper towel. Then add onion, and fry until brown and crispy, and place in same bowl. 
 6. To prepare the pickling sauce, add all pickling ingredients into a large bowl. Combine until sugar and salt is fully combined and taste. Pickling sauce should balance salt, sweet and sour - so adjust ingredients as required. 
-7. Add all ingredients from the fry up into the bowl of pickling sauce, and gently combine. Rest for 30 mins - 1 hour for flavours to absorb. 
+7. Add all ingredients from the fry up into the bowl of pickling sauce, and gently combine. Rest for 30 mins - 1 hour for the pickle flavours to absorb. 
 
 Serve with rice and curry of your choice. Enjoy! 
 

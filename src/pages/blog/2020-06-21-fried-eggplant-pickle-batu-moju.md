@@ -5,7 +5,7 @@ date: 2020-06-21T06:50:06.359Z
 description: "This \"Batu moju\" (translated as \"eggplant pickle\") brings back
   childhood memories of the delicious smell of a fry-up wafting from my mum's
   kitchen. The balance of salt, sour and sweet, makes this dish impossibly
-  moreish, and is a perfect side dish for your rice and curry - and is a great
+  moreish, is a perfect side dish for your rice and curry - and is a great
   vegetarian or vegan option. Just try not to pick at all the tasty salty/fried
   eggplant bits as you cook (trust me, it's hard). "
 featuredpost: true

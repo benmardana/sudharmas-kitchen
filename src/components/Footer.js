@@ -31,6 +31,17 @@ const Footer = class extends React.Component {
               </Link>
             </div>
           </nav>
+          <div className="level">
+            <div
+              style={{ padding: '0 12px' }}
+              className="level-item has-text-centered"
+            >
+              Favicon made by Freepik from www.flaticon.com
+            </div>
+            <div className="level-item has-text-centered"></div>
+            <div className="level-item has-text-centered"></div>
+            <div className="level-item has-text-centered"></div>
+          </div>
         </div>
       </footer>
     );

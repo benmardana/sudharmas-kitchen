@@ -11,8 +11,10 @@ description: >
   and time again, Mum's recipes are classics.  Sri Lankan food is uniquely
   personal to the home cook: there is never a "standard" recipe. 
 featuredpost: true
-featuredimage: /img/img_1960-2-1-.jpg
+featuredimage: /img/resized.jpg
 tags:
   - Sri Lanka
 ---
 Growing up in Australia, I've watched my mum tailor and tweak her recipes to suit many different palates, and this blog is a summary of my personal favourites.
+
+![Mum and me ](/img/img_20191117_172758-1-v2.jpg)

@@ -25,24 +25,24 @@ tags:
 
 *For the fry up*
 
-1. 1 kg eggplant, sliced into rounds across the equator, and then into 1 cm wide strips
-2. 1/2 teaspoon turmeric
-3. 1 onion, sliced along the equator 
-4. 6 green chillies, sliced and deseeded (if small, leave as is)
-5. 1 tablespoon salt
-6. Vegetable oil (enough to deep fry)
-7. (Optional) Handful of dried anchovies (Ikan Bilis) - leave out for vegetarian/vegan option
-8. (Optional) Raw green chilli (sliced) for garnish
+* 1 kg eggplant, sliced into rounds across the equator, and then into 1 cm wide strips
+* 1/2 teaspoon turmeric
+* 1 onion, sliced along the equator 
+* 6 green chillies, sliced and deseeded (if small, leave as is)
+* 1 tablespoon salt
+* Vegetable oil (enough to deep fry)
+* (Optional) Handful of dried anchovies (Ikan Bilis) - leave out for vegetarian/vegan option
+* (Optional) Raw green chilli (sliced) for garnish
 
 *For the pickling sauce*
 
-1. 1/3 cup white vinegar
-2. 2 tablespoons sugar
-3. 1 tablespoon chilli powder
-4. 1/2 teaspoon mustard seed powder
-5. 3 cloves garlic (minced)
-6. 1/2 inch ginger (minced)
-7. Pinch of salt (to taste)
+* 1/3 cup white vinegar
+* 2 tablespoons sugar
+* 1 tablespoon chilli powder
+* 1/2 teaspoon mustard seed powder
+* 3 cloves garlic (minced)
+* 1/2 inch ginger (minced)
+* Pinch of salt (to taste)
 
 **Method:**
 
@@ -57,7 +57,7 @@ tags:
 3. While eggplant is being drained, slowly heat up a wok of oil until hot enough for deep frying. Use a wooden spoon to test temperature of the oil (there should be bubbles). Do not let oil over heat or smoke - this will burn the eggplant. 
 4. Once oil is at temperature, fry eggplant in batches (2-4 batches), until golden brown and each piece is beginning to crinkle. Remove each batch into a bowl with paper towel to absorb excess oil. 
 5. In the same oil, fry green chillies, and dried anchovy (if using) for 2-5 minutes. Remove from oil and rest in a bowl with paper towel. Then add onion, and fry until brown and crispy, and place in same bowl. 
-6. To prepare the pickling sauce, add all pickling ingredients into a large bowl. Combine until sugar and salt is fully combined and taste. Pickling sauce should balance salt, sweet and sour - so adjust ingredients as required. 
+6. To prepare the pickling sauce, add all pickling ingredients into a large bowl. Combine until sugar and salt is fully dissolved and taste. Pickling sauce should balance salt, sweet and sour - so adjust ingredients as required. 
 7. Add all ingredients from the fry up into the bowl of pickling sauce, and gently combine. Rest for 30 mins - 1 hour for the pickle flavours to absorb. 
 
 Serve with rice and curry of your choice. Enjoy!

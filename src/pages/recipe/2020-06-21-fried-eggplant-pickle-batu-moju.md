@@ -11,7 +11,12 @@ description: "This \"Batu moju\" (translated as \"eggplant pickle\") brings back
 featuredpost: true
 featuredimage: /img/img_20200621_155502.jpg
 tags:
-  - eggplant fried srilankan pickle main vegetarian
+  - eggplant
+  - fried
+  - sri lankan
+  - pickle
+  - main
+  - vegetarian
 ---
 ![Batu Moju - Sri lankan fried eggplant pickle](/img/img_20200621_155502.jpg "Batu Moju")
 

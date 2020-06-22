@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Sudharma's Kitchen
 image: /img/img_2378-1-1-.jpg
-heading: "Simply some delicious Sri Lankan cooking "
+heading: "Delicious Sri Lankan cooking "
 subheading: A blog for my mum and her delicious Sri Lankan recipes
 mainpitch:
   title: "  "

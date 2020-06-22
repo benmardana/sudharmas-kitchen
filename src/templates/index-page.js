@@ -31,14 +31,14 @@ export const IndexPageTemplate = ({
           height: '150px',
           lineHeight: '1',
           justifyContent: 'space-around',
-          alignItems: 'left',
+          alignItems: 'flex-start',
           flexDirection: 'column',
         }}
       >
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            backgroundColor: 'transparent',
+            backgroundColor: 'rgba(15, 59, 34, 0.8)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -49,7 +49,7 @@ export const IndexPageTemplate = ({
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            backgroundColor: 'transparent',
+            backgroundColor: 'rgba(15, 59, 34, 0.8)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',

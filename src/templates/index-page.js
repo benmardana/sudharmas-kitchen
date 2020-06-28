@@ -4,14 +4,8 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import BlogRoll from '../components/BlogRoll';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
-export const IndexPageTemplate = ({
-  heroImage,
-  title,
-  subtitle,
-  mainpitch,
-}) => (
+export const IndexPageTemplate = ({ heroImage, title, subtitle }) => (
   <div>
     <div
       className="full-width-image margin-top-0"
@@ -65,19 +59,6 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.heading}</h1>
-                  </div>
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: mainpitch.image,
-                    }}
-                  />
-                  <div className="tile">
-                    <p className="subtitle">{mainpitch.body}</p>
-                  </div>
-                </div>
                 <div className="column is-12" style={{ padding: '0' }}>
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest Recipes
@@ -102,7 +83,6 @@ IndexPageTemplate.propTypes = {
   heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  mainpitch: PropTypes.object,
 };
 
 const IndexPage = ({ data }) => {
@@ -114,7 +94,6 @@ const IndexPage = ({ data }) => {
         heroImage={frontmatter.heroImage}
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
-        mainpitch={frontmatter.mainpitch || {}}
       />
     </Layout>
   );
@@ -143,10 +122,6 @@ export const pageQuery = graphql`
         }
         title
         subtitle
-        mainpitch {
-          heading
-          body
-        }
       }
     }
   }

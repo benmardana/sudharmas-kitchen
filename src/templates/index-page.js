@@ -4,21 +4,22 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import BlogRoll from '../components/BlogRoll';
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 export const IndexPageTemplate = ({
-  image,
+  heroImage,
   title,
-  heading,
-  subheading,
+  subtitle,
   mainpitch,
-  description,
 }) => (
   <div>
     <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+          !!heroImage.childImageSharp
+            ? heroImage.childImageSharp.fluid.src
+            : heroImage
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
@@ -54,7 +55,7 @@ export const IndexPageTemplate = ({
             padding: '0.25em',
           }}
         >
-          {subheading}
+          {subtitle}
         </h3>
       </div>
     </div>
@@ -66,18 +67,15 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                    <h1 className="title">{mainpitch.heading}</h1>
                   </div>
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: mainpitch.image,
+                    }}
+                  />
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
+                    <p className="subtitle">{mainpitch.body}</p>
                   </div>
                 </div>
                 <div className="column is-12" style={{ padding: '0' }}>
@@ -101,12 +99,10 @@ export const IndexPageTemplate = ({
 );
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
+  subtitle: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
 };
 
 const IndexPage = ({ data }) => {
@@ -115,12 +111,10 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
+        heroImage={frontmatter.heroImage}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
+        subtitle={frontmatter.subtitle}
+        mainpitch={frontmatter.mainpitch || {}}
       />
     </Layout>
   );
@@ -140,21 +134,19 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
-        title
-        image {
+        heroImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        heading
-        subheading
+        title
+        subtitle
         mainpitch {
-          title
-          description
+          heading
+          body
         }
-        description
       }
     }
   }

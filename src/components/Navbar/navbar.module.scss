@@ -1,0 +1,134 @@
+@import '../../static/variables.scss';
+@import '../../static/mixins.scss';
+
+.NavBar {
+  background-color: $white;
+  box-shadow: 0 2px 0 0 #f5f5f5;
+  z-index: 1;
+
+  .NavBarMenu {
+    margin: 0 36px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+
+    @include small-medium {
+      margin: 0;
+      display: block;
+    }
+
+    @include large {
+      margin: 0 56px;
+    }
+
+    .NavBarLogo {
+      display: flex;
+      height: 52px;
+      align-items: center;
+      flex-shrink: 0;
+      min-height: 100%;
+
+      @include small-medium {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.NavBarItem {
+  padding: 8px 12px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  &.Logo {
+    font-weight: 700;
+  }
+}
+
+.NavBarBurger {
+  color: $grey;
+  cursor: pointer;
+  display: block;
+  height: 52px;
+  width: 52px;
+  position: relative;
+  margin-left: auto;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  span {
+    background-color: currentColor;
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+    transform-origin: center;
+    transition-duration: 86ms;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: ease-out;
+    width: 16px;
+
+    &:nth-child(1) {
+      top: calc(50% - 6px);
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 1px);
+    }
+
+    &:nth-child(3) {
+      top: calc(50% + 4px);
+    }
+  }
+
+  &.Active {
+    span {
+      &:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+      }
+    }
+  }
+
+  @include large {
+    display: none;
+  }
+}
+
+.NavBarResponsiveMenu {
+  .NavBarItem {
+    width: 100%;
+    text-align: center;
+
+    @include small-medium {
+      &:hover {
+        background: #fafafa;
+      }
+    }
+  }
+
+  @include small-medium {
+    display: none;
+
+    &.Active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $white;
+      padding: 8px 0;
+    }
+  }
+}
+
+.NavBarActive {
+  display: block;
+}

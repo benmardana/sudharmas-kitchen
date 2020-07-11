@@ -1,0 +1,48 @@
+@import './normalize.scss';
+@import './variables.scss';
+
+// Extra normalisation
+* {
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+html,
+body,
+#___gatsby {
+  min-height: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+a,
+a:any-link {
+  text-decoration: none;
+  color: $grey;
+}
+
+a:hover {
+  color: $blue;
+}
+
+// User Styles
+#gatsby-focus-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+main {
+  height: 100%;
+}
+
+a:hover {
+  color: $blue;
+}

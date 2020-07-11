@@ -1,105 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import BlogRoll from '../components/BlogRoll';
+import IndexPage from '../components/IndexPageTemplate';
 
-export const IndexPageTemplate = ({ heroImage, title, subtitle }) => (
-  <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!heroImage.childImageSharp
-            ? heroImage.childImageSharp.fluid.src
-            : heroImage
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'flex-start',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            backgroundColor: 'rgba(15, 59, 34, 0.8)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            backgroundColor: 'rgba(15, 59, 34, 0.8)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subtitle}
-        </h3>
-      </div>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="column is-12" style={{ padding: '0' }}>
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest Recipes
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/recipe">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-);
-
-IndexPageTemplate.propTypes = {
-  heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-};
-
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+const IndexPageWrapper = ({ data }) => {
+  const { heroImage, title, subtitle } = data.markdownRemark.frontmatter;
 
   return (
     <Layout>
-      <IndexPageTemplate
-        heroImage={frontmatter.heroImage}
-        title={frontmatter.title}
-        subtitle={frontmatter.subtitle}
-      />
+      <IndexPage heroImage={heroImage} title={title} subtitle={subtitle} />
     </Layout>
   );
 };
 
-IndexPage.propTypes = {
+IndexPageWrapper.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -107,10 +23,10 @@ IndexPage.propTypes = {
   }),
 };
 
-export default IndexPage;
+export default IndexPageWrapper;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
+  query IndexPage {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         heroImage {

@@ -21,7 +21,7 @@ export const RecipeTemplate = ({
       {helmet || ''}
       <div className="container content">
         <div className="columns is-centered">
-          <div className="column is-8">
+          <div className="column is-7">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>

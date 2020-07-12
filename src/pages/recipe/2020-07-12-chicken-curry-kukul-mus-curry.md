@@ -4,7 +4,8 @@ title: Chicken curry ("Kukul Mus Curry")
 date: 2020-07-12T04:41:47.761Z
 description: 'This chicken curry is a staple for a traditional Sri Lankan meal.
   Make sure you reduce the liquid down slowly to soften the meat, but maintain
-  enough sauce (or known as "hodi") - great for mopping up with bread or rice. '
+  enough sauce (known as "hodi") - which is great for mopping up with bread or
+  rice. '
 featuredpost: true
 featuredimage: /img/chicken-curry.jpg
 tags:

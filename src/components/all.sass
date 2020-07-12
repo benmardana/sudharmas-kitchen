@@ -128,11 +128,17 @@ $menu-label-color: $white-ter
 
 #postcontent
   span
-    width: 80%
+    margin-top: -28px !important
     margin-left: 5px !important
     margin-bottom: 40px
+    span
+      padding-bottom: 0 !important
     img
-      border-radius: 1px
+      height: 386px !important
+      max-width: 80% !important
+      height: auto !important
+      border-radius: 1px !important
+      position: relative !important
 
 @import "~bulma"
 
@@ -152,5 +158,6 @@ $menu-label-color: $white-ter
 +mobile
   #postcontent
     span
-      width: 95%
-      margin-left: auto !important
+      img
+        max-width: 95%
+        margin-left: auto !important

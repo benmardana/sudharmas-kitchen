@@ -2,7 +2,7 @@
 templateKey: recipe
 title: "Dhal curry (vegan friendly) "
 date: 2020-10-18T02:09:23.199Z
-description: "Dhal curry - a classic staple for every Sri Lankan families' rice
+description: "Dhal curry - another classic for every Sri Lankan families' rice
   and curry. Not only is this creamy dish delicious, it is so nutritious,
   filling and vegan! "
 featuredpost: true

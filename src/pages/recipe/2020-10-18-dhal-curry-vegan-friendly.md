@@ -43,6 +43,7 @@ tags:
 * 1 pinch black mustard seeds
 * Onion (finely sliced) 
 * Few curry leaves
+* (Optional) Red chilli 
 
 **Method:**
 

@@ -15,6 +15,8 @@ tags:
   - vegan
   - vegetarian
 ---
+![](/img/pxl_20201018_012313441.jpg)
+
 **Serves:** 5-6
 
 **Storage:** Keeps refrigerated for up to one week
@@ -36,6 +38,7 @@ tags:
 * Salt to taste
 
 *For the temper*
+
 * 4 tablespoons olive oil 
 * 1 pinch black mustard seeds
 * Onion (finely sliced) 
@@ -45,12 +48,12 @@ tags:
 
 1. In a medium-large saucepan, add red lentils, onion, garlic, turmeric, raw curry powder, fenugreek seeds, and curry leaves.
 2. Add salt to taste (at least 1/2 tablespoon).
-2. Add water to cover the lentils (about 2-3 cm above the lentils), and stir to combine ingredients.
-3. Bring to boil on medium heat, being careful to stop lentils from burning at the bottom of pan. 
-4. Simmer on medium heat until red lentils split and soften, adding hot water if insufficient. 
-5. Once liquid has evaporated, stir in coconut milk and take off the heat. 
-6. In a separate fry pan, bring olive oil to heat. 
-7. Add temper ingredients, and stir until sufficiently fried (watch that the onion does not burn). 
-8. Serve dhal into its serving dish and pour temper on top for garnish. 
+3. Add water to cover the lentils (about 2-3 cm above the lentils), and stir to combine ingredients.
+4. Bring to boil on medium heat, being careful to stop lentils from burning at the bottom of pan. 
+5. Simmer on medium heat until red lentils split and soften, adding hot water if insufficient. 
+6. Once liquid has evaporated, stir in coconut milk and take off the heat. 
+7. In a separate fry pan, bring olive oil to heat. 
+8. Add temper ingredients, and stir until sufficiently fried (watch that the onion does not burn). 
+9. Serve dhal into its serving dish and pour temper on top for garnish. 
 
 Serve with rice and other curries of your choice. Enjoy!

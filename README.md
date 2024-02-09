@@ -1,73 +1,68 @@
-# Sudharma's Kitchen
+# Astro Starter Kit: Blog
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0a34c216-5184-4eec-a503-00bb0e2906d1/deploy-status)](https://app.netlify.com/sites/sudharmaskitchen/deploys)
-
-**Note:** This website uses with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org)
-
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
-
-## Prerequisites
-
-- Node (v8.2.0 or higher)
-- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
-- [Netlify CLI](https://github.com/netlify/cli)
-
-## Getting Started (Recommended)
-
-### Access Locally
-
-Pulldown a local copy of the Github repository Netlify created for you, with the name you specified in the previous step
-
-```
-$ npx degit https://github.com/benmcgarvey/sudharmas-kitchen.git
-$ cd sudharmas-kitchen
-$ yarn
-$ npm run dev
+```sh
+npm create astro@latest -- --template blog
 ```
 
-This uses the new [Netlify Dev](https://www.netlify.com/products/dev/?utm_source=blog&utm_medium=netlifycms&utm_campaign=devex) CLI feature to serve any functions you have in the `lambda` folder.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
 
-### Media Libraries (installed, but optional)
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-Media Libraries have been included in this starter as a default. If you are not planning to use `Uploadcare` or `Cloudinary` in your project, you **can** remove them from module import and registration in `src/cms/cms.js`. Here is an example of the lines to comment or remove them your project.
+![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
 
-```javascript
-import CMS from "netlify-cms-app";
-// import uploadcare from 'netlify-cms-media-library-uploadcare'
-// import cloudinary from 'netlify-cms-media-library-cloudinary'
+Features:
 
-import AboutPagePreview from "./preview-templates/AboutPagePreview";
-import BlogPostPreview from "./preview-templates/BlogPostPreview";
-import ProductPagePreview from "./preview-templates/ProductPagePreview";
-import IndexPagePreview from "./preview-templates/IndexPagePreview";
+- ✅ Minimal styling (make it your own!)
+- ✅ 100/100 Lighthouse performance
+- ✅ SEO-friendly with canonical URLs and OpenGraph data
+- ✅ Sitemap support
+- ✅ RSS Feed support
+- ✅ Markdown & MDX support
 
-// CMS.registerMediaLibrary(uploadcare);
-// CMS.registerMediaLibrary(cloudinary);
+## 🚀 Project Structure
 
-CMS.registerPreviewTemplate("index", IndexPagePreview);
-CMS.registerPreviewTemplate("about", AboutPagePreview);
-CMS.registerPreviewTemplate("products", ProductPagePreview);
-CMS.registerPreviewTemplate("blog", BlogPostPreview);
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+├── public/
+├── src/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
 ```
 
-Note: Don't forget to also remove them from `package.json` and `yarn.lock` / `package-lock.json` using `yarn` or `npm`. During the build netlify-cms-app will bundle the media libraries as well, having them removed will save you build time.
-Example:
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-```
-yarn remove netlify-cms-media-library-uploadcare
-```
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-OR
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
 
-```
-yarn remove netlify-cms-media-library-cloudinary
-```
+Any static assets, like images, can be placed in the `public/` directory.
 
-## Purgecss
+## 🧞 Commands
 
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
+All commands are run from the root of the project, from a terminal:
 
-# CONTRIBUTING
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+## 👀 Want to learn more?
+
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Credit
+
+This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).

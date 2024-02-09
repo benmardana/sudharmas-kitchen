@@ -1,0 +1,160 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('recipe')).sort(
+  (a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      main {
+        width: 960px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        width: calc(50% - 1rem);
+      }
+      ul li * {
+        text-decoration: none;
+        transition: 0.2s ease;
+      }
+      ul li:first-child {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      ul li:first-child img {
+        width: 100%;
+      }
+      ul li:first-child .title {
+        font-size: 2.369rem;
+      }
+      ul li img {
+        margin-bottom: 0.5rem;
+        border-radius: 12px;
+      }
+      ul li a {
+        display: block;
+      }
+      .title {
+        margin: 0;
+        color: rgb(var(--black));
+        line-height: 1;
+      }
+      .date {
+        margin: 0;
+        color: rgb(var(--gray));
+      }
+      .hero-image {
+        width: 100%;
+      }
+      .hero-image img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+      }
+      .prose {
+        width: 720px;
+        max-width: calc(100% - 2em);
+        margin: auto;
+        padding: 1em;
+        color: rgb(var(--gray-dark));
+      }
+      .title {
+        margin-bottom: 1em;
+        padding: 1em 0;
+        text-align: center;
+        line-height: 1;
+      }
+      .title h1 {
+        margin: 0 0 0.5em 0;
+      }
+      .date {
+        margin-bottom: 0.5em;
+        color: rgb(var(--gray));
+      }
+      .last-updated-on {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <article>
+        <div class="hero-image">
+          <img
+            width={1020}
+            height={510}
+            src={'/resized.jpg'}
+            alt="mum and me"
+          />
+        </div>
+        <div class="prose">
+          <div class="title">
+            <h1>Sudharma's Kitchen</h1>
+            <hr />
+          </div>
+          <div>
+            My mum, Sue, is the the best cook in the world. The countless number
+            of times I've heard folk from all over the globe (Australia, New
+            Zealand, South Africa, the UK, Denmark, China, Thailand, the
+            Netherlands... AND Sri Lanka) sit at our dining table, clean their
+            plates, lick their lips and rub their full bellies - proving that,
+            time and time again, Mum's recipes are classics. Sri Lankan food is
+            uniquely personal to the home cook: there is never a "standard"
+          </div>
+          <hr />
+          <div>
+            Growing up in Australia, I've watched my mum tailor and tweak her
+            recipes to suit many different palates, and this blog is a summary
+            of my personal favourites.
+          </div>
+        </div>
+      </article>
+      <br />
+      <br />
+      <br />
+      <section>
+        <ul>
+          {
+            posts.map((post) => (
+              <li>
+                <a href={`/recipe/${post.slug}/`}>
+                  <img
+                    width={720}
+                    height={360}
+                    src={post.data.heroImage}
+                    alt=""
+                  />
+                  <h4 class="title">{post.data.title}</h4>
+                  <p class="date">
+                    <FormattedDate date={post.data.date} />
+                  </p>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
